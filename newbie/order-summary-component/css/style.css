@@ -1,3 +1,18 @@
+/* General styles to center the whole page and
+ put footer at the bottom of the page! */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 1vw;
+}
+footer {
+  margin-top: auto;
+}
+main {
+  align-self: center;
+  max-width: 80ch;
+}
 
 /* Attribution on the footer */
 .attribution {
