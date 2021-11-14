@@ -10,6 +10,9 @@
   /* Image paths */
   --pattern-background-desktop: url("../images/pattern-background-desktop.svg");
   --pattern-background-mobile: url("../images/pattern-background-mobile.svg");
+
+  /* Font-family */
+  --font-family: 'Red Hat Display', sans-serif;
 }
 
 /* General styles to center the whole page and
@@ -23,6 +26,7 @@ body {
   background-image: var(--pattern-background-desktop);
   background-repeat: no-repeat;
   background-size: 100vw;
+  font-family: var(--font-family);
 }
 footer {
   margin-top: auto;
