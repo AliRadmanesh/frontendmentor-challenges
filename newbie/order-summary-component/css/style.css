@@ -1,3 +1,16 @@
+/* Custom Properties */
+:root {
+  /* Colors */
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  /* Image paths */
+  --pattern-background-desktop: url("../images/pattern-background-desktop.svg");
+}
+
 /* General styles to center the whole page and
  put footer at the bottom of the page! */
 body {
@@ -5,6 +18,10 @@ body {
   display: flex;
   flex-direction: column;
   padding: 1vw;
+  background-color: var(--pale-blue);
+  background-image: var(--pattern-background-desktop);
+  background-repeat: no-repeat;
+  background-size: 100vw;
 }
 footer {
   margin-top: auto;
