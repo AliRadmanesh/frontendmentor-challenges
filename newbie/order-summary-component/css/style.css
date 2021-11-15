@@ -21,6 +21,9 @@
   --font-family: "Red Hat Display", sans-serif;
 }
 
+html {
+  font-size: 14px;
+}
 body {
   min-height: 100vh;
   display: flex;
@@ -42,7 +45,7 @@ button:hover {
   opacity: 0.7;
 }
 .card {
-  width: calc(100vw / 3.5);
+  width: 90vw;
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
@@ -66,11 +69,11 @@ button:hover {
   font-weight: 500;
   color: var(--gray);
   text-align: center;
-  max-width: 30ch;
+  max-width: 25ch;
   margin-bottom: 1rem;
 }
 .selected-plan-container {
-  width: 75%;
+  width: 85%;
   padding: 1.5rem;
   margin-bottom: 1rem;
   border-radius: var(--border-radius-small);
@@ -104,7 +107,7 @@ button:hover {
   color: var(--bright-blue);
 }
 .proceed-payment-button {
-  width: 75%;
+  width: 85%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: none;
@@ -118,7 +121,7 @@ button:hover {
   box-shadow: 0px 10px 20px 10px var(--desaturated-blue-opacity);
 }
 .cancel-order-button {
-  width: 75%;
+  width: 85%;
   padding: 0.75rem;
   margin-bottom: 1rem;
   border: none;
@@ -137,4 +140,28 @@ button:hover {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+  body {
+  background-image: var(--pattern-background-mobile);
+  }
+  .card {
+    width: calc(100vw / 4);
+  }
+  .card-description {
+    max-width: 30ch;
+  }
+  .selected-plan-container {
+    width: 75%;
+  }
+  .proceed-payment-button {
+    width: 75%;
+  }
+  .cancel-order-button {
+    width: 75%;
+  }
 }
