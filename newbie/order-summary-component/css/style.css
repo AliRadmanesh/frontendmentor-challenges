@@ -7,7 +7,7 @@
   --desaturated-blue: hsl(224, 23%, 55%);
   --desaturated-blue-opacity: hsla(224, 23%, 55%, 0.4);
   --dark-blue: hsl(223, 47%, 23%);
-  --gray: #8F96B0;
+  --gray: #8f96b0;
 
   /* Sizing */
   --border-radius-large: 1rem;
@@ -18,15 +18,15 @@
   --pattern-background-mobile: url("../images/pattern-background-mobile.svg");
 
   /* Font-family */
-  --font-family: 'Red Hat Display', sans-serif;
+  --font-family: "Red Hat Display", sans-serif;
 }
 
-/* General styles to center the whole page and
- put footer at the bottom of the page! */
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 1vw;
   background-color: var(--pale-blue);
   background-image: var(--pattern-background-desktop);
@@ -34,14 +34,9 @@ body {
   background-size: 100vw;
   font-family: var(--font-family);
 }
-footer {
-  margin-top: auto;
-}
 main {
-  align-self: center;
   max-width: 80ch;
 }
-
 button:hover {
   text-decoration: none;
   opacity: 0.7;
@@ -100,44 +95,42 @@ button:hover {
   color: var(--gray);
 }
 .change-plan-button {
-	padding: 0;
-	border: none;
+  padding: 0;
+  border: none;
   background: none;
-	cursor: pointer;
+  cursor: pointer;
   font-weight: 700;
   text-decoration: underline;
-	color: var(--bright-blue);
+  color: var(--bright-blue);
 }
 .proceed-payment-button {
   width: 75%;
-	padding: 0.75rem;
+  padding: 0.75rem;
   margin-bottom: 1rem;
   border: none;
   background: none;
-	border-radius: var(--border-radius-small);
+  border-radius: var(--border-radius-small);
   background-color: var(--bright-blue);
-	cursor: pointer;
+  cursor: pointer;
   font-weight: 700;
-	color: #ffffff;
+  color: #ffffff;
   -webkit-box-shadow: 0px 10px 20px 10px var(--desaturated-blue-opacity);
   box-shadow: 0px 10px 20px 10px var(--desaturated-blue-opacity);
 }
 .cancel-order-button {
   width: 75%;
-	padding: 0.75rem;
+  padding: 0.75rem;
   margin-bottom: 1rem;
   border: none;
   background: none;
-	cursor: pointer;
+  cursor: pointer;
   font-weight: 700;
-	color: var(--gray);
+  color: var(--gray);
 }
 .cancel-order-button:hover {
   opacity: 1;
   color: var(--dark-blue);
 }
-
-/* Attribution on the footer */
 .attribution {
   font-size: 11px;
   text-align: center;
