@@ -26,24 +26,29 @@
   </head>
   <body>
     <main>
-      <div>
+      <div class="card">
         <img
+          class="card-header-image"
           src="./images/illustration-hero.svg"
           alt="A happy woman listening to music"
         />
-        <h2>Order Summary</h2>
-        <p>
+        <h2 class="card-header-text">Order Summary</h2>
+        <p class="card-description">
           You can now listen to millions of songs, audiobooks, and podcasts on
           any device anywhere you like!
         </p>
-        <div>
-          <img src="./images/icon-music.svg" alt="Music icon" />
-          <span>Annual Plan</span>
-          <span>$59.99/year</span>
-          <button>Change</button>
+        <div class="selected-plan-container">
+          <div class="selected-plan-left-container">
+            <img src="./images/icon-music.svg" alt="Music icon" />
+            <div class="selected-plan-text-container">
+              <p class="selected-plan-text">Annual Plan</p>
+              <p class="selected-plan-price">$59.99/year</p>
+            </div>
+          </div>
+          <button class="change-plan-button">Change</button>
         </div>
-        <button>Proceed to Payment</button>
-        <button>Cancel Order</button>
+        <button class="proceed-payment-button">Proceed to Payment</button>
+        <button class="cancel-order-button">Cancel Order</button>
       </div>
     </main>
     <footer class="attribution">
