@@ -1,10 +1,12 @@
 /* Custom Properties */
 :root {
   /* Colors */
+  --white: #ffffff;
   --pale-blue: hsl(225, 100%, 94%);
   --bright-blue: hsl(245, 75%, 52%);
   --very-pale-blue: hsl(225, 100%, 98%);
   --desaturated-blue: hsl(224, 23%, 55%);
+  --light-blue: hsl(228, 45%, 44%);
   --desaturated-blue-opacity: hsla(224, 23%, 55%, 0.4);
   --dark-blue: hsl(223, 47%, 23%);
   --gray: #8f96b0;
@@ -32,7 +34,7 @@ body {
   align-items: center;
   padding: 1vw;
   background-color: var(--pale-blue);
-  background-image: var(--pattern-background-desktop);
+  background-image: var(--pattern-background-mobile);
   background-repeat: no-repeat;
   background-size: 100vw;
   font-family: var(--font-family);
@@ -46,7 +48,7 @@ button:hover {
 }
 .card {
   width: 90vw;
-  background-color: #ffffff;
+  background-color: var(--white);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -116,7 +118,7 @@ button:hover {
   background-color: var(--bright-blue);
   cursor: pointer;
   font-weight: 700;
-  color: #ffffff;
+  color: var(--white);
   -webkit-box-shadow: 0px 10px 20px 10px var(--desaturated-blue-opacity);
   box-shadow: 0px 10px 20px 10px var(--desaturated-blue-opacity);
 }
@@ -139,7 +141,7 @@ button:hover {
   text-align: center;
 }
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--light-blue);
 }
 
 @media screen and (min-width: 768px) {
@@ -147,10 +149,10 @@ button:hover {
     font-size: 16px;
   }
   body {
-  background-image: var(--pattern-background-mobile);
+  background-image: var(--pattern-background-desktop);
   }
   .card {
-    width: calc(100vw / 4);
+    width: calc(100vw / 3.7);
   }
   .card-description {
     max-width: 30ch;
