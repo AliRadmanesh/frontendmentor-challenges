@@ -144,15 +144,16 @@ button:hover {
   color: var(--light-blue);
 }
 
+/* Tablet layout */
 @media screen and (min-width: 768px) {
   html {
     font-size: 16px;
   }
   body {
-  background-image: var(--pattern-background-desktop);
+  background-image: var(--pattern-background-mobile);
   }
   .card {
-    width: calc(100vw / 3.7);
+    width: calc(100vw / 1.7);
   }
   .card-description {
     max-width: 30ch;
@@ -165,5 +166,15 @@ button:hover {
   }
   .cancel-order-button {
     width: 75%;
+  }
+}
+
+/* Desktop layout */
+@media screen and (min-width: 1200px) {
+  body {
+  background-image: var(--pattern-background-desktop);
+  }
+  .card {
+    width: calc(100vw / 3.5);
   }
 }
