@@ -1,0 +1,26 @@
+:root {
+  /* Colors */
+  --very-dark-blue: hsl(233, 47%, 7%);
+  --dark-desaturated-blue: hsl(244, 38%, 16%);
+  --soft-violet: hsl(277, 64%, 61%);
+  --white: hsl(0, 0%, 100%);
+  --transparent-white-paragraph: hsla(0, 0%, 100%, 0.75);
+  --transparent-white-stats: hsla(0, 0%, 100%, 0.6);
+  --light-blue: hsl(228, 45%, 44%);
+
+  /* Image paths */
+  --image-header-desktop: url("../images/image-header-desktop.jpg");
+  --image-header-mobile: url("../images/image-header-mobile.jpg");
+
+  /* Font-family */
+  --font-Inter: "Inter", sans-serif;
+  --font-Lexend-Deca: "Lexend Deca", sans-serif;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: var(--light-blue);
+}
