@@ -18,6 +18,12 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
     />
+    <!-- Picturefill (Responsive Image Polyfill) -->
+    <script>
+      // Picture element HTML5 shiv
+      document.createElement("picture");
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.min.js"></script>
     <!-- Modern CSS Reset -->
     <link rel="stylesheet" href="./css/reset.min.css" />
     <!-- Custom styles -->
@@ -27,20 +33,47 @@
   </head>
   <body>
     <main>
-      <h1>Get insights that help your business grow.</h1>
-      <p>
-        Discover the benefits of data analytics and make better decisions
-        regarding revenue, customer experience, and overall efficiency.
-      </p>
+      <div class="card">
+        <picture>
+          <source
+            class="card-image"
+            srcset="./images/image-header-desktop.jpg"
+            media="(min-width: 768px)"
+          />
+          <img
+            class="card-image"
+            srcset="images/image-header-mobile.jpg"
+            alt="People at work"
+          />
+        </picture>
 
-      <span>10k+</span>
-      <span>companies</span>
-      <span>314</span>
-      <span>templates</span>
-      <span>12m+</span>
-      <span>queries</span>
+        <div class="card-content">
+          <h1>
+            Get <span class="heading-violet">insights</span> that help your
+            business grow.
+          </h1>
+          <p>
+            Discover the benefits of data analytics and make better decisions
+            regarding revenue, customer experience, and overall efficiency.
+          </p>
+
+          <div class="stat-container">
+            <div>
+              <div class="stat-number">10k+</div>
+              <div class="stat-heading">companies</div>
+            </div>
+            <div>
+              <div class="stat-number">314</div>
+              <div class="stat-heading">templates</div>
+            </div>
+            <div>
+              <div class="stat-number">12M+</div>
+              <div class="stat-heading">queries</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
     <footer class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
