@@ -41,8 +41,9 @@ picture {
   border-top-right-radius: var(--border-radius);
 }
 .card-image {
-  mix-blend-mode: multiply;
   width: 100%;
+  filter: opacity(80%);
+  mix-blend-mode: multiply;
 }
 .card-content {
   display: flex;
