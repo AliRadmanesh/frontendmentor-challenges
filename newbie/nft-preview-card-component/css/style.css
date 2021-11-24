@@ -169,13 +169,3 @@ p {
     width: 25vw;
   }
 }
-
-/* Extra-extra-large-size layout */
-@media screen and (min-width: 1400px) {
-  html {
-    font-size: 20px;
-  }
-  main {
-    width: 20vw;
-  }
-}
