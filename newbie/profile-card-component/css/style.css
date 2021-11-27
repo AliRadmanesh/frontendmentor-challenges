@@ -30,16 +30,16 @@ body {
 }
 .bg-top {
   position: fixed;
-  top: -25vh;
-  left: -65vw;
-  transform: scale(1.5);
+  top: -70vw;
+  left: -140vw;
+  transform: scale(3);
   opacity: 0.5;
 }
 .bg-bottom {
   position: fixed;
-  bottom: -25vh;
-  right: -90vw;
-  transform: scale(2);
+  bottom: -25vw;
+  right: -70vw;
+  transform: scale(1.5);
   opacity: 0.7;
 }
 main {
@@ -127,14 +127,14 @@ main {
     width: 45vw;
   }
   .bg-top {
-    top: -30vh;
+    top: -40vw;
     left: -75vw;
     transform: scale(1.5);
     opacity: 0.8;
   }
   .bg-bottom {
-    bottom: -25vh;
-    right: -50vw;
+    bottom: -35vw;
+    right: -45vw;
     transform: scale(1);
     opacity: 0.9;
   }
@@ -149,14 +149,14 @@ main {
     width: 35vw;
   }
   .bg-top {
-    top: -20vh;
-    left: -55vw;
-    transform: scale(1.2);
+    top: -20vw;
+    left: -45vw;
+    transform: scale(1);
     opacity: 0.8;
   }
   .bg-bottom {
-    bottom: -30vh;
-    right: -30vw;
+    bottom: -35vw;
+    right: -35vw;
     transform: scale(1);
     opacity: 0.9;
   }
@@ -165,18 +165,16 @@ main {
 /* Extra-large-size layout */
 @media screen and (min-width: 1200px) {
   main {
-    width: 25vw;
+    width: 30vw;
   }
   .bg-top {
-    top: -85vh;
+    top: -40vw;
     left: -25vw;
-    transform: scale(1);
     opacity: 0.8;
   }
   .bg-bottom {
-    bottom: -100vh;
+    bottom: -45vw;
     right: -20vw;
-    transform: scale(1);
     opacity: 0.9;
   }
 }
@@ -184,18 +182,16 @@ main {
 /* Extra-extra-large-size layout */
 @media screen and (min-width: 1400px) {
   main {
-    width: 20vw;
+    width: 25vw;
   }
   .bg-top {
-    top: -50vh;
+    top: -35vw;
     left: -15vw;
-    transform: scale(1.5);
     opacity: 0.8;
   }
   .bg-bottom {
-    bottom: -60vh;
-    right: -10vw;
-    transform: scale(1.5);
+    bottom: -40vw;
+    right: -15vw;
     opacity: 0.9;
   }
   .avatar-container {
