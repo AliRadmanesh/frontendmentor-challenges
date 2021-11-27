@@ -12,10 +12,6 @@
 
   /* Font-family */
   --font-Kumbh-Sans: "Kumbh Sans", sans-serif;
-
-  /* Images */
-  --bg-pattern-top: url("../images/bg-pattern-top.svg");
-  --bg-pattern-bottom: url("../images/bg-pattern-bottom.svg");
 }
 
 html {
