@@ -37,6 +37,7 @@ main {
   left: 0;
   width: 100vw;
   height: 30vh;
+  z-index: -1;
 }
 .bg-bottom {
   position: absolute;
@@ -44,6 +45,7 @@ main {
   right: 0;
   width: 100vw;
   height: 25vh;
+  z-index: -1;
 }
 .top-section {
   display: flex;
