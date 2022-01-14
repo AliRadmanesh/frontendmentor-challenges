@@ -5,3 +5,4 @@
 - [3-Column Preview Card Component](https://aliradmanesh.github.io/frontendmentor-challenges/newbie/3-column-preview-card-component/)
 - [NFT Preview Card Component](https://aliradmanesh.github.io/frontendmentor-challenges/newbie/nft-preview-card-component/)
 - [Profile Card Component](https://aliradmanesh.github.io/frontendmentor-challenges/newbie/profile-card-component/)
+- [Social Proof Section](https://aliradmanesh.github.io/frontendmentor-challenges/newbie/social-proof-section/)
