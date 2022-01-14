@@ -1,0 +1,320 @@
+:root {
+  /* Colors */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  /* Spacing */
+
+  /* Font-family */
+  --font-Spartan: "Spartan", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  font-family: var(--font-Spartan);
+  background-color: var(--white);
+  position: relative;
+}
+main {
+  padding: 0 1rem 0 1rem;
+  padding-inline: 1rem;
+}
+.bg-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 30vh;
+}
+.bg-bottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100vw;
+  height: 25vh;
+}
+.top-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about {
+  margin-bottom: 2rem;
+  margin-block-end: 2rem;
+}
+.title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 2rem;
+  letter-spacing: -2px;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-inline: 2rem;
+  color: var(--very-dark-magenta);
+}
+.description {
+  font-size: 0.875rem;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 1rem;
+  margin-block-start: 1rem;
+  color: var(--very-dark-magenta);
+}
+.rating-cards {
+  width: 100%;
+}
+.rating-card {
+  padding: 1rem;
+  background-color: var(--light-grayish-magenta);
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  margin-block-end: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  margin-block-end: 1rem;
+}
+.stars img {
+  margin-right: 0.5rem;
+  margin-inline-end: 0.5rem;
+}
+.rating-card span {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--very-dark-magenta);
+}
+.testimonial-cards {
+  margin-top: 2rem;
+  margin-block-start: 2rem;
+}
+.testimonial-card {
+  padding: 2rem;
+  margin-bottom: 0.875rem;
+  margin-block-end: 0.875rem;
+  border-radius: 0.5rem;
+  background-color: var(--very-dark-magenta);
+}
+.user-container {
+  display: flex;
+  align-items: center;
+}
+.user-container img {
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+}
+.user-info {
+  margin-left: 1rem;
+  margin-inline-start: 1rem;
+}
+.user-info div {
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+.user-info div:nth-child(1) {
+  color: var(--white);
+}
+.user-info div:nth-child(2) {
+  color: var(--soft-pink);
+}
+.testimonial-card p {
+  margin-top: 2rem;
+  margin-block-start: 2rem;
+  font-size: 0.875rem;
+  color: var(--white);
+}
+.attribution {
+  margin-top: 2rem;
+  margin-block-start: 2rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+  margin-inline: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+  color: var(--dark-grayish-magenta);
+}
+.attribution a {
+  color: var(--very-dark-magenta);
+}
+
+/* 
+  Media queries are based on Tailwindcss responsive design system.
+  Link: https://tailwindcss.com/docs/responsive-design
+*/
+
+/* small-size layout */
+@media screen and (min-width: 640px) {
+  main {
+    padding: 0 5rem 0 5rem;
+    padding-inline: 5rem;
+  }
+}
+
+/* medium-size layout */
+@media screen and (min-width: 768px) {
+  main {
+    padding: 0 10rem 0 10rem;
+    padding-inline: 10rem;
+  }
+}
+
+/* large-size layout */
+@media screen and (min-width: 1024px) {
+  body {
+    justify-content: flex-start;
+  }
+  main {
+    padding: 0 3rem 0 3rem;
+    padding-inline: 3rem;
+  }
+  .bg-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40vw;
+    height: 40vh;
+  }
+  .bg-bottom {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 70vh;
+  }
+  .top-section {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 2rem;
+    margin-block-start: 2rem;
+  }
+  .about {
+    flex-basis: 40%;
+    margin-bottom: 0;
+    margin-block-end: 0;
+    padding-right: 4rem;
+    padding-inline-end: 4rem;
+  }
+  .title {
+    font-size: 2rem;
+    text-align: start;
+    letter-spacing: -2px;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-inline: 0rem;
+  }
+  .description {
+    font-size: 1rem;
+    text-align: start;
+    margin-top: 1rem;
+    margin-block-start: 1rem;
+  }
+  .rating-cards {
+    padding-left: 1rem;
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .rating-card {
+    width: 90%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .rating-card:nth-child(1) {
+    margin-right: 4rem;
+    margin-inline-end: 4rem;
+  }
+  .rating-card:nth-child(2) {
+    margin-right: 2rem;
+    margin-inline-end: 2rem;
+  }
+  .stars {
+    margin-bottom: 0;
+    margin-block-end: 0;
+    margin-right: 1rem;
+    margin-inline-end: 1rem;
+  }
+  .testimonial-cards {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 4rem;
+    margin-block-start: 4rem;
+  }
+  .testimonial-card:nth-child(1) {
+    margin-right: 1rem;
+  }
+  .testimonial-card:nth-child(2) {
+    margin-right: 1rem;
+    margin-top: 1rem;
+  }
+  .testimonial-card:nth-child(3) {
+    margin-top: 2rem;
+  }
+}
+
+/* extra-large-size layout */
+@media screen and (min-width: 1280px) {
+  main {
+    padding: 0 4rem 0 4rem;
+    padding-inline: 4rem;
+  }
+  .rating-card {
+    width: 70%;
+  }
+  .about {
+    padding-right: 2rem;
+    padding-inline-end: 2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    width: 10ch;
+  }
+  .testimonial-card:nth-child(1) {
+    margin-right: 1.5rem;
+  }
+  .testimonial-card:nth-child(2) {
+    margin-right: 1.5rem;
+  }
+}
+
+/* extra-extra-large-size layout */
+@media screen and (min-width: 1536px) {
+  main {
+    padding: 0 20rem 0 20rem;
+    padding-inline: 20rem;
+  }
+  .about {
+    padding-right: 3rem;
+    padding-inline-end: 3rem;
+  }
+  .testimonial-card:nth-child(1) {
+    margin-right: 2rem;
+  }
+  .testimonial-card:nth-child(2) {
+    margin-right: 2rem;
+  }
+}
